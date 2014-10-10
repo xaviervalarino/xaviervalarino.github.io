@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="gearsapp.css">	<link rel="stylesheet" type="text/css" href="gearsapp.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="left">
+			<img src="" >
+			<ul id="nav">
+				<li><a id="clickHome" href="#">Home</a></li>
+				<li><a id="clickSS" href="zxcvbn_test/test.html">ZXCVBN Test</a></li>
+				<li><a id="clickMeta" href="1008_registration/registration.html">Registration Page</a></li>
+				<li><a id="clickCloud" href="#">GEARS Cloud</a></li>
+			</ul>
+		</div>
+		<div id="right">
+			<div id="home" class="product">Home</div>
+			<div id="ss" class="product">Security Score</div>
+			<div id="meta" class="product">Metascan</div>
+			<div id="cloud" class="product">Cloud</div>
+		</div>
+
+		<script type="text/javascript">
+		//Change product shown
+			var navArray = ['#clickHome','#clickSS','#clickMeta','#clickCloud'];
+			var productArray = ['#home','#ss','#meta','#cloud'];
+
+		for (var i = 0; i < navArray.length; i++) 
+		{
+			$(navArray[i]).click(function() {
+				$(this).css({"background":"#fff","font-weight":"bold"});
+						
+				for (var j = 0; j < productArray.length; j++) {
+					$(productArray[j]).css({'display':'inline','z-index':'100'});
+				}
+			});
+		} 	
+		</script>
+	</body>
+</html>

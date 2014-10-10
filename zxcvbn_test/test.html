@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZXCVBN Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="zxcvbn.js"></script>
+	<style type="text/css">
+		html {
+			font-family: Helvetica, Arial, Sans-serif;
+			font-size: 0.8em;
+		}
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			display: -webkit-flex;
+			-webkit-align-items: center;
+			-webkit-justify-content: center;
+
+			width: auto;
+			height: 100%;
+		}
+		#psswrd{
+			width: 100%;
+		}
+		span{
+			font-weight: bold;
+		}
+		.oneTwo{
+			color: tomato;
+		}
+		.threeFour{
+			color: MediumSeaGreen;
+		}
+	</style>
+</head>
+	
+<body>
+	<form>
+		<h1>ZXCVBN.js Test</h1>
+		<input name="password" type="password" id="psswrd">
+		<p>Your passwords entropy: <span class="oneTwo"id="entropy">0</span></p>
+		<p>Time needed to crack your password:  <span id="crackTime">instant</span></p>
+	</form>
+</body>
+
+<script type="text/javascript">
+	window.onload = (function(){
+		var psswrd = document.getElementById("psswrd");
+		var entropy = document.getElementById("entropy");
+		var crackTime = document.getElementById("crackTime");
+
+		psswrd.addEventListener("input", function() {
+			var passValue = psswrd.value;
+			var passStrength = zxcvbn(passValue);
+			var crackTimeOutput = passStrength.crack_time_display;
+			
+			entropy.innerHTML = passStrength.score;
+			crackTime.innerHTML = crackTimeOutput;
+
+			if (passStrength.score > 2) {
+				if (entropy.className == "oneTwo") {
+					entropy.className = "threeFour";
+				}
+			} else {
+				if (entropy.className == "threeFour") {
+					entropy.className = "oneTwo";
+				}
+			}
+		});
+	})	
+</script>
+
+</html>
