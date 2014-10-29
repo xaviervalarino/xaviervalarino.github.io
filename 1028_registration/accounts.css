@@ -143,3 +143,12 @@ input:not(#submitSignUp) {
 #terms {
 	font-size: 1em;
 }
+@media screen and (max-width: 768px) {
+	.productInfo {
+		display: none;
+	}
+	.content {
+		width: auto;
+		margin: 0 1.2em;
+	}
+}
