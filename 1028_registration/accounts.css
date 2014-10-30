@@ -99,7 +99,7 @@ li:not(#uprCase) {
 }
 #psswrdTest {
 	position: absolute;
-	top: -1em;
+	top: -1.2em;
 	right: 0;
 	text-align: center;
 }
@@ -113,6 +113,7 @@ ul {
 }
 ul::after {
 	position: absolute;
+	left: 50%;
 	bottom: -.7em;
 	width: 0;
 	height: 0;
@@ -124,6 +125,7 @@ ul::after {
 }
 ul:before {
 	position: absolute;
+	left: 50%;
 	bottom: -.76em;
 	width: 0;
 	height: 0;
