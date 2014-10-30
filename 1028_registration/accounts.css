@@ -99,7 +99,7 @@ li:not(#uprCase) {
 }
 #psswrdTest {
 	position: absolute;
-	top: -1.2em;
+	top: -1em;
 	right: 0;
 	text-align: center;
 }
