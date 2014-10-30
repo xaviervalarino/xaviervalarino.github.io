@@ -99,20 +99,32 @@ li:not(#uprCase) {
 }
 #psswrdTest {
 	position: absolute;
-	top: -2em;
+	top: -1em;
 	right: 0;
 	text-align: center;
 }
 ul {
 	position: relative;
-	color: #fff;
-	background-color: #ff803c;
+	color: #ff803c;
+	background-color: #ffe6d1;
+	border: 1px solid #ff803c;
 	border-radius: 3px;
-	padding: 1em;	
+	padding: .6em;	
 }
-ul:after {
+ul::after {
 	position: absolute;
 	bottom: -.7em;
+	width: 0;
+	height: 0;
+	content: "";
+	border-left: .8em solid transparent;
+	border-right: .8em solid transparent;
+	border-top: .8em solid #ffe6d1;
+	margin-left: -.8em;
+}
+ul:before {
+	position: absolute;
+	bottom: -.76em;
 	width: 0;
 	height: 0;
 	content: "";
@@ -153,6 +165,7 @@ input:not(#submitSignUp) {
 	}
 	.content {
 		width: auto;
+		float: none;
 		margin: 0 1.2em;
 	}
 }
