@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700);
+
+html {
+	font-family: Open sans, Arial, sans-serif;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	background-color: #fbfbfc;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+}
+a {
+	background-color: transparent;
+	color: #00a6dd;
+	text-decoration: none;
+}
+a:active,
+a:hover{
+  outline: 0;
+  border-bottom: 1px dotted #00a6dd;
+}
+a.logo:hover {
+	text-decoration: none;
+	border: 0 none;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+h2 {
+	font-weight: 400;
+	color: #333;
+	margin: 1em 0 0 0;
+
+}
+img {
+  border: 0;
+}
+svg:not(:root) {  
+  overflow: hidden;
+}
+button,
+input,
+ {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	font-family: inherit;
+	font-size: 1em;
+	line-height: 1.2em;
+	-webkit-appearance: none;
+	border-radius: 0;
+	padding-left: .8em;
+}
+input[type="checkbox"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/*End resets*/
+.noscript {
+	color: #ff803c;
+	background-color: #ffe6d1;
+	border: 1px solid #ff803c;
+}
+.header {
+	padding: 1.2em ;
+}
+.logo {
+	display: block;
+	width: 10em;
+	height: 1.25em;
+	overflow: hidden;
+}
+.logo > img {
+	width: 10em;
+	height: auto;
+}
+.page-container {
+	position: relative;
+}
+.productInfo {
+	width: 40%;
+	height: 37em;
+	float: left;
+	margin-left: 1.2em;
+}
+h1 {
+	font-size: 2.8em;
+	color: #999;
+}
+.content {	 
+	display: block;
+	width: 28em;
+	float: left;
+	margin: 0 2em 0 2em ;
+}
+.form {
+	position: relative;
+	background-color: #fff;
+	padding: 2.5em;
+	border: 1px solid #f1f1f1;
+}
+form {
+	background-color: #fff;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+}
+#top {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+#bottom {
+	border-top: 0;
+	padding-top: 1.5em;
+}
+.animate {
+	-webkit-transition: transform .5s ease-in;
+	-webkit-transform: translateY(6.5em);
+}
+label {
+	color: #999;
+	display: inherit;
+	text-transform: uppercase;
+	margin-bottom: 0.2em;
+}
+#password {
+	position: relative;
+}
+ul {
+	position: absolute;
+	-webkit-user-select: none;
+	list-style-type: none;
+	cursor: default;	
+	line-height: 1.75em;
+	margin: 1em 0 1.5em 0;
+	padding: 0;
+	z-index: 0;
+	transition: opacity .75s ease-in;
+}
+li{
+	display: inline-block;
+	float: left;
+	font-size: .95em;
+	width: 50%;
+	margin: 0;
+	color: #999;
+	white-space: nowrap;
+}
+li::before {
+	display: inline-block;
+	width: 1.25em;
+	height: 1.25em;
+	content: "";
+	border-radius: 50%;
+	vertical-align: middle;
+	margin: -0.2em 0.4em 0 0;
+	margin-top: -.2em;
+	background: #ddd url("sprite.min.svg") no-repeat bottom left;
+	background-size:  auto 2.5em;
+}
+.success {
+	color: #333;
+}
+.success::before {
+	background-color: #8fc822;
+	background-position: bottom right;
+}
+.required {
+	color: #e44f09;
+	font-weight: 700;
+}
+input:not(#submitSignUp) {
+	width: 100%;
+	height: 2.5em;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.inputBox{
+	margin-bottom: 1.5em;
+}
+#psswrdBox {
+	margin-bottom: 0;
+}
+#submitSignUp {
+	display: inline-block;
+	right: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .7em 2.5em;
+	border: 0;
+	border-radius: 3px;
+	margin-top: 1em;
+	background-color: #00a6dd;
+}
+#submitSignUp:active, submitSignUp:hover {
+	background-color: #078ebb;
+}
+#terms {
+	font-size: .75em;
+}
+/*
+RESPONSIVE STYLES
+*/
+
+/* Max-width 768px */
+@media screen and (max-width: 48em) {  
+	body {
+		background-color: #fff;
+	}
+	.productInfo {
+		display: none;
+	}
+	.content {
+		width: auto;
+		padding: 0 1.5em 2.5em 1.5em;
+		margin: 0;
+		float: none;
+	}
+	form {
+		position: static;
+		background-color: #fff;
+		border: 0;
+	}
+	.form {
+		float: none;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	li {
+		font-size: .85em;
+	}
+	#submitSignUp {
+		width: 100%;
+	}
+	/* Portrait */
+	@media screen and (orientation:landscape) {
+		ul {
+			display: block;
+		}
+		li {
+			width: auto;
+			margin-right: 1em;
+		}
+		.animate {
+			-webkit-transition: transform .5s ease-in;
+			-webkit-transform: translateY(3em);
+		}
+		/*Landscape for iPhone 4 and below*/
+		@media screen and (max-device-width: 30em) {
+		   li {
+	   		font-size: 0.75em;
+	   		margin-right: .8em;
+			}
+		}	
+	}
+}
+

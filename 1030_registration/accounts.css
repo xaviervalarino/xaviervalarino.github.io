@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700);
-
+/*CSS Resets*/
 html {
 	font-family: Open sans, Arial, sans-serif;
 	font-size: 1em; 
@@ -52,9 +52,11 @@ input[type="checkbox"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
-/*End Normalize.css*/
+/*End resets*/
 .noscript {
-
+	color: #ff803c;
+	background-color: #ffe6d1;
+	border: 1px solid #ff803c;
 }
 .header {
 	background-color: #00a6dd;
@@ -82,59 +84,35 @@ label {
 	text-transform: uppercase;
 	margin-bottom: .2em;
 }
+
+#psswrdTest {
+	position: relative;
+}
 ul {
 	list-style-type: none;
-	margin: 0;
+	position: relative;
+	font-size: .9em;
+	margin: 0 0 1.5em 0; 
 	padding: 0;
+	user-select: none;
 }
 li{
 	display: inline-block;
+	box-sizing: inherit;
 }
-/*Li just for formatting CSS*/
-li:not(#uprCase) {
-	display: none;
-}
-/*END*/
-#psswrd {
-	position: relative;
-}
-#psswrdTest {
-	position: absolute;
-	top: -1em;
-	right: 0;
-	text-align: center;
-}
-ul {
-	position: relative;
-	color: #ff803c;
-	background-color: #ffe6d1;
-	border: 1px solid #ff803c;
-	border-radius: 3px;
-	padding: .6em;	
-}
-ul::after {
-	position: absolute;
-	left: 50%;
-	bottom: -.7em;
-	width: 0;
-	height: 0;
+li::before {
+	display: inline-block;
+	width: 1.6em;
+	height: 1.6em;
 	content: "";
-	border-left: .8em solid transparent;
-	border-right: .8em solid transparent;
-	border-top: .8em solid #ffe6d1;
-	margin-left: -.8em;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin: -0.2em 0.4em 0 .3em;
+	margin-top: -.2em;
+	background: #ddd url("icons.svg") no-repeat top center;
 }
-ul:before {
-	position: absolute;
-	left: 50%;
-	bottom: -.76em;
-	width: 0;
-	height: 0;
-	content: "";
-	border-left: .8em solid transparent;
-	border-right: .8em solid transparent;
-	border-top: .8em solid #ff803c;
-	margin-left: -.8em;
+li:first-child::before {
+	margin-left: 0;
 }
 .required {
 	color: #e44f09;
@@ -162,6 +140,7 @@ input:not(#submitSignUp) {
 #terms {
 	font-size: 1em;
 }
+/* Ipads and such */
 @media screen and (max-width: 768px) {
 	.productInfo {
 		display: none;
@@ -170,5 +149,26 @@ input:not(#submitSignUp) {
 		width: auto;
 		float: none;
 		margin: 0 1.2em;
+	}
+}
+/* Portrait */
+@media screen and (orientation:portrait) {
+	ul {
+		display: table;
+	}
+	li {
+		width: 50%;
+		box-sizing: border-box;
+		padding: 0 1.6em 1em 0;
+		white-space: nowrap;
+	}
+	li::before {
+		margin-left: 0;
+	}
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+   li {
+	-webkit-text-size-adjust: auto;
 	}
 }
