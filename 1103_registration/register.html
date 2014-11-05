@@ -6,8 +6,8 @@
  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		
 		<title>OPSWAT Accounts | Registration</title>
 		<link rel="stylesheet" type="text/css" href="accounts.css">
-		<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
-		<script type="text/javascript" src="login.js" async></script>
+		<!-- <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script> -->
+		<script type="text/javascript" src="register.js" async></script>
 	</head>
 
 	<body>
@@ -36,26 +36,26 @@
 							<label>Password<span class="required">*</span></label>
 								<input name="password" type="password" autocomplete="off" id="password" tabindex="2" style="cursor">
 								<ul>
-									<li id="uprCase" class="success"  alt="Must have an uppercase letter">Uppercase</li>
-									<li id="lwrCase" class="success" alt="Must have a lowercase letter">Lowercase</li>
-									<li id="number" alt="Must have a numerical digit">Number</li>			
-									<li id="symbol" alt="Must have a special character">Symbol</li>
-									<li id="lngth" alt="Must have eight or more characters">Eight or more</li>
+									<li id="uppercase">Uppercase</li>
+									<li id="lowercase">Lowercase</li>
+									<li id="digits">Number</li>
+									<li id="symbol">Symbol</li>
+									<li id="length" >Eight or more</li>
 								</ul>
 						</div>
 					</div>
 					<div id="bottom" class="form">
 						<div class="inputBox">
 							<label>Confirm Password<span class="required">*</span></label>
-								<input name="Confirm Password" type="password" autocomplete="off" id="confirmPsswrd" tabindex="3">	
+								<input name="Confirm Password" type="password" autocomplete="off" id="confirm-passwrd" tabindex="3">	
 						</div>
 						<div class="inputBox">
 							<label>First Name<span class="required">*</span></label>
-								<input name="First Name" type="text" id="firstName" tabindex="4">
+								<input name="First Name" type="text" id="first-name" tabindex="4">
 						</div>
 						<div class="inputBox">
 							<label>Last Name<span class="required">*</span></label>
-								<input name="Last Name" type="text" id="lastName" tabindex="5">			
+								<input name="Last Name" type="text" id="last-name" tabindex="5">			
 						</div>
 						<div class="inputBox">
 							<label>Company Name<span class="required">*</span></label>
@@ -69,14 +69,14 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-			var psswrd = $("input[name='password']");
-			var bottom = $("#bottom");
-			var passTest = $("#psswrdTest");
-			var content = $(".content");
+		window.onload = ( function() {
 
-			psswrd.focus(function(){
-				bottom.addClass("animate");
-				content.addClass("animateBig");
+			var passwordInput =	document.getElementById('password');
+			var bottom =	document.getElementById('bottom');
+
+			passwordInput.onfocus = ( function() {
+				bottom.classList.add('animate');
 			});
+		});	
 	</script>
 </html>
