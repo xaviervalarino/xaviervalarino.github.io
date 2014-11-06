@@ -36,30 +36,30 @@
 							<label>Password<span class="required">*</span></label>
 								<input name="password" type="password" autocomplete="off" id="password" tabindex="2" style="cursor">
 								<ul>
-									<li id="uppercase">Uppercase</li>
-									<li id="lowercase">Lowercase</li>
-									<li id="digits">Number</li>
-									<li id="symbol">Symbol</li>
-									<li id="length" >Eight or more</li>
+									<li id="uppercase" class="li">Uppercase</li>
+									<li id="lowercase" class="li">Lowercase</li>
+									<li id="digits" class="li">Number</li>
+									<li id="symbol" class="li">Symbol</li>
+									<li id="length" class="li">Eight or more</li>
 								</ul>
 						</div>
 					</div>
 					<div id="bottom" class="form">
 						<div class="inputBox">
 							<label>Confirm Password<span class="required">*</span></label>
-								<input name="Confirm Password" type="password" autocomplete="off" id="confirm-passwrd" tabindex="3">	
+								<input name="confirmpassword" type="password" autocomplete="off" id="confirm-password" tabindex="3">	
 						</div>
 						<div class="inputBox">
 							<label>First Name<span class="required">*</span></label>
-								<input name="First Name" type="text" id="first-name" tabindex="4">
+								<input name="firstname" type="text" id="first-name" tabindex="4">
 						</div>
 						<div class="inputBox">
 							<label>Last Name<span class="required">*</span></label>
-								<input name="Last Name" type="text" id="last-name" tabindex="5">			
+								<input name="lastname" type="text" id="last-name" tabindex="5">			
 						</div>
 						<div class="inputBox">
 							<label>Company Name<span class="required">*</span></label>
-								<input name="Company Name" type="text" id="company" tabindex="6">
+								<input name="company" type="text" id="company" tabindex="6">
 						</div>
 						<span id="terms">By hitting sign up you agree to OPSWAT's <a href="https://accounts.opswat.com/auth/module.php/opswauth/eula.php">Terms and Conditions</a></span>
 						<input type="button" id="submitSignUp" value="Sign Up" tabindex="7">
@@ -68,15 +68,6 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript">
-		window.onload = ( function() {
-
-			var passwordInput =	document.getElementById('password');
-			var bottom =	document.getElementById('bottom');
-
-			passwordInput.onfocus = ( function() {
-				bottom.classList.add('animate');
-			});
-		});	
-	</script>
 </html>
+
+
