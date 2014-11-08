@@ -31,23 +31,28 @@
 						<div class="inputbox">
 							<label>Email Address<span class="required">*</span></label>
 								<input name="email" type="email" id="email" tabindex="1">
+									<span id="no-email" class="msg error hidden">No email address? no activation email</span>
+									<span id="email-format" class="msg error hidden">Double-check the email format</span>
+
 						</div>
 						<div id="psswrdbox" class="inputbox">
 							<label>Password<span class="required">*</span></label>
 								<input name="password" type="password" autocomplete="off" id="password" tabindex="2" style="cursor">
 								<ul>
-									<li id="uppercase" class="li">Uppercase</li>
-									<li id="lowercase" class="li">Lowercase</li>
-									<li id="digits" class="li">Number</li>
-									<li id="symbol" class="li">Symbol</li>
-									<li id="length" class="li">Eight or more</li>
+									<li id="uppercase" class="msg">Uppercase</li>
+									<li id="lowercase" class="msg">Lowercase</li>
+									<li id="digits" class="msg">Number</li>
+									<li id="symbol" class="msg">Symbol</li>
+									<li id="length" class="msg">Eight or more</li>
 								</ul>
 						</div>
 					</div>
 					<div id="bottom" class="form">
 						<div class="inputbox">
 							<label>Confirm Password<span class="required">*</span></label>
-								<input name="confirmpassword" type="password" autocomplete="off" id="confirm-password" tabindex="3">	
+								<input name="confirmpassword" type="password" autocomplete="off" id="confirm-password" tabindex="3">
+									<span id="confirm" class="msg hidden">Passwords match</span>
+									<span id="no-match" class="msg error hidden">Passwords do not match</span>
 						</div>
 						<div class="inputbox">
 							<label>First Name<span class="required">*</span></label>
@@ -62,12 +67,10 @@
 								<input name="company" type="text" id="company" tabindex="6">
 						</div>
 						<span id="terms">By hitting sign up you agree to OPSWAT's <a href="https://accounts.opswat.com/auth/module.php/opswauth/eula.php">Terms and Conditions</a></span>
-						<input type="button" id="blue-button" value="Sign Up" tabindex="7">
+						<input type="button" class="blue-button" value="Sign Up" tabindex="7">
 					</div>
 				</form>
 			</div>
 		</div>
 	</body>
 </html>
-
-

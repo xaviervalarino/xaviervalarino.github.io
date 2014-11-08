@@ -101,7 +101,7 @@ h1 {
 	font-size: 2.8em;
 	color: #999;
 }
-.content {	 
+.content {
 	display: block;
 	width: 28em;
 	float: left;
@@ -122,21 +122,16 @@ h1 {
 	padding-top: 1.5em;
 
 	-webkit-transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	-moz-transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	-ms-transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-	-o-transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 	transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .animate-bottom {
-	-webkit-transform: translateY(6.5em);
-	-moz-transform: translateY(6.5em);
-	-ms-transform: translateY(6.5em);
-	-o-transform: translateY(6.5em);
-	transform: translateY(6.5em);
+	-webkit-transform: translateY(6em);
+	transform: translateY(6em);
 }
 label {
 	color: #999;
 	display: inherit;
+	clear: left;
 	text-transform: uppercase;
 	margin-bottom: 0.2em;
 }
@@ -144,45 +139,41 @@ label {
 	position: relative;
 }
 ul {
-position: absolute;
-left: -1px;
-right: -1px;
-background-color: #fff;
-line-height: 1.75em;
-margin: 0;
-padding: 1em 2.55em 1.5em 2.55em;
-border-left: 1px solid #f1f1f1;
-border-right: 1px solid #f1f1f1;
-z-index: 0;
--webkit-user-select: none;
-list-style-type: none;
-cursor: default;
+	position: absolute;
+	left: -1px;
+	right: -1px;
+	background-color: #fff;
+	line-height: 1.75em;
+	margin: 0;
+	padding: .5em 2.55em 1.5em 2.55em;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	z-index: 0;
+	list-style-type: none;
+	cursor: default;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
-li{
-	display: inline-block;
-	float: left;
-	font-size: .95em;
+li {
 	width: 50%;
+	float: left;
+}
+span {
+	padding: .5em 0;
+}
+.msg{
+	display: inline-block;
+	height: auto;
+	font-size: .95em;
 	margin: 0;
 	color: #999;
 	white-space: nowrap;
-
-	-webkit-transition: background-color  300ms ease-out,
-	-moz-transition: background-color  300ms ease-out,
-	-o-transition: background-color  300ms ease-out,
-	transition: background-color  300ms ease-out,
-
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-
-	-webkit-animation: bulge 300ms;
-	-moz-animation: bulge 300ms;
-	-o-animation: bulge 300ms;
-	animation: bulge 300ms;	
 }
-li::before, li:before {
+.msg::before, .msg:before {
 	display: inline-block;
 	width: 1.25em;
 	height: 1.25em;
@@ -196,24 +187,20 @@ li::before, li:before {
 }
 .error {
 	color: #e44f09;
+
+
 }
  .error::before {
 	background-color: #fc651b;
+	-webkit-animation: contract 300ms;
+	-animation: contact 300ms;
 
-	-webkit-transition: background-color  300ms ease-out,
-	-moz-transition: background-color  300ms ease-out,
-	-o-transition: background-color  300ms ease-out,
-	transition: background-color  300ms ease-out,
+	-webkit-animation: contact 300ms;
+	animation: contact 300ms;
+);
 
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
 
-	-webkit-animation: bulge 300ms;
-	-moz-animation: bulge 300ms;
-	-o-animation: bulge 300ms;
-	animation: bulge 300ms;
+
  }
 .success {
 	color: #333;
@@ -222,43 +209,35 @@ li::before, li:before {
 	background-color: #8fc822;
 	background-position: bottom right;
 
-	-webkit-transition: background-color  300ms ease-out,
-	-moz-transition: background-color  300ms ease-out,
-	-o-transition: background-color  300ms ease-out,
-	transition: background-color  300ms ease-out,
+	-webkit-transition: background  300ms ease-out,
+	transition: background  300ms ease-out,
 
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
 	transform: scale(1);
 
 	-webkit-animation: bulge 300ms;
-	-moz-animation: bulge 300ms;
-	-o-animation: bulge 300ms;
 	animation: bulge 300ms;
 }
+/* Bulge animation */
+@-webkit-keyframes bulge {
+	from, to{ -webkit-transform: scale(1); }
+	20% 	{ -webkit-transform: scale(1.3); }
+}
+@keyframes bulge {
+	from, to{ transform: scale(1); }
+	20% 	{ transform: scale(1.3); }
+}
 
+/* Contract animaton */
+@-webkit-keyframes contract {
+	from, to{ -webkit-transform: scale(1); }
+	20% 	{ -webkit-transform: scale(.8); }
+}
+@keyframes contract {
+	from, to{ transform: scale(1); }
+	20% 	{ transform: scale(.8); }
+}
 
-	@-webkit-keyframes bulge {
-		from, to{ -webkit-transform: scale(1); }
-		20% 	{ -webkit-transform: scale(1.3); }
-	}
-	@-moz-keyframes bulge {
-		from, to{ -moz-transform: scale(1); }
-		20% 	{ -moz-transform: scale(1.3); }
-	}	
-	@-ms-keyframes bulge {
-		from, to{ -ms-transform: scale(1); }
-		20% 	{ -ms-transform: scale(1.3); }
-	}
-	@-o-keyframes bulge {
-		from, to{ -o-transform: scale(1); }
-		20% 	{ -o-transform: scale(1.3); }
-	}	
-	@keyframes bulge {
-		from, to{ transform: scale(1); }
-		20% 	{ transform: scale(1.3); }
-	}
 .required {
 	color: #e44f09;
 	font-weight: 700;
@@ -270,12 +249,16 @@ input:not(#blue-button) {
 	border-radius: 3px;
 }
 .inputbox {
-	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	height: auto;
+	-webkit-transition: height 300ms ease-out;
+	transition: height 300ms ease-out;
+
 }
 #psswrdbox {
-	margin-bottom: 0;
+	padding-bottom: 0;
 }
-#blue-button {
+.blue-button {
 	display: inline-block;
 	right: 0;
 	color: #fff;
@@ -287,11 +270,18 @@ input:not(#blue-button) {
 	margin-top: 1em;
 	background-color: #00a6dd;
 }
-#blue-button:active, #blue-button:hover {
+.blue-button:active, .blue-button:hover {
 	background-color: #078ebb;
 }
 #terms {
 	font-size: .75em;
+}
+.hidden {
+	height: 0;
+	display: none;
+	-webkit-transition: all  300ms ease-out,
+	transition: all  300ms ease-out,
+
 }
 /*--------------\
 RESPONSIVE STYLES
@@ -312,7 +302,6 @@ RESPONSIVE STYLES
 		float: none;
 	}
 	.form {
-		float: none;
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -325,10 +314,10 @@ RESPONSIVE STYLES
 		padding-left: 0;
 		border-left: 0;
 	}
-	li {	
+	.msg {	
 		font-size: .85em;
 	}
-	#blue-button {
+	.blue-button {
 		width: 100%;
 	}
 	/* Portrait */
@@ -336,19 +325,22 @@ RESPONSIVE STYLES
 		ul {
 			display: block;
 			border: 0;
-
 		}
-		li {
+		li.msg {
 			width: auto;
 			margin-right: 1em;
 		}
 		.animate-bottom {
 			-webkit-transition: transform .5s ease-in;
-			-webkit-transform: translateY(3em);
+			-webkit-transition: transform .5s ease-in;
+
+			-webkit-transform: translateY(2em);
+			transform: translateY(2em);
+
 		}
 		/*Landscape for iPhone 4 and below*/
 		@media screen and (max-device-width: 30em) {
-		   li {
+		   .msg, li.msg {
 	   		font-size: 0.75em;
 	   		margin-right: .8em;
 			}

@@ -1,5 +1,5 @@
 (function(){
-// DOM Elements
+// DOM nodes
 	var passwordInput = document.getElementById('password');
 	var passConfirmInput = document.getElementById('confirm-password')
 	var uppercase = document.getElementById('uppercase');
@@ -9,7 +9,7 @@
 	var length = document.getElementById('length');
 	var formBottom =	document.getElementById('bottom');
 	var li = document.getElementsByClassName('li');
-// Password Requirements
+// Password requirements
 	var containsUppercase = /[A-Z]/;
 	var containsLowercase = /[a-z]/;
 	var containsDigits = /[0-9]/;
@@ -26,11 +26,11 @@
 								includesDigits &&
 								includesSpecialChar );
 
-/* email address must be correct format */
+/* Email address must be correct format */
 
-/* -------------\
+/* ------------------------------\
 	Test password on keystroke
-\---------------*/
+\-------------------------------*/
 	passwordInput.addEventListener( 'input', function () {
 
 		var value = passwordInput.value;
@@ -47,42 +47,37 @@
 		inludesLowercase = checkPasswordFormat( lowercaseTest , lowercase );
 		includesDigits = checkPasswordFormat( digitTest , digits );
 		includesSpecialChar = checkPasswordFormat( specialCharTest , symbol );
+
+		// If user invalidates password after it was valid
+		// isPasswordValid ? {} : isDrawerOpen ? {} : openPsswrdDrawer();
 	});
-	/* -------------\
+
+	/* -------------------\
 		Password Tester
-	\---------------*/
+	\--------------------*/
 		function checkPasswordFormat( test, requirement ) {
 
-			test ? psswrdReqMet() : removeSuccess();
+			test ? psswrdIsValid() : removeSuccess();
 			return test;
 
-			 function psswrdReqMet() {
-
+			 function psswrdIsValid() {
 			 	requirement.classList.add('success');
 			 }
 
 			 function removeSuccess() {
-
-			 	var removeSuccess= requirement.classList.remove('success');
+			 	var removeSuccessClass= requirement.classList.remove('success');
 				requirement.className === 'li Success' ? removeSuccessClass : {} ;
 			}			
 	}
-/* -------------\
-	Open and Close requirements drawer
-\---------------*/
+/* ----------------------------------\
+	Open/Close requirements drawer
+\-----------------------------------*/
 	passwordInput.addEventListener( 'focus', function(){
-		
-		isPasswordValid ? {} : formBottom.classList.add('animate-bottom');
-		
+		isPasswordValid? {} : formBottom.classList.add('animate-bottom');
 	});
-	// TODO make this modular so you can use if for Confirm password
+
 	passwordInput.addEventListener( 'blur', function(){
 
-		isPasswordValid =	(	passwordLength &&
-								includesUppercase &&
-								inludesLowercase &&
-								includesDigits &&
-								includesSpecialChar );
 		isPasswordValid ? (
 			( 
 			formBottom.classList.remove('animate-bottom') ,
@@ -91,18 +86,14 @@
 		) : (
 			errors()
 		);
-	})
+	});
 
 	function errors(){
 		for( i = 0; i < li.length; i++ ) {
 			//li[i].className === "li success" ? {} :(
 				li[i].classList.add('error')
 			//);
-			// TODO make this per only the correct li
 		}
 	}
-/* -------------\
-	If password passes test
-\---------------*/
 
 })();
