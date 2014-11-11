@@ -72,31 +72,34 @@
 
 			 function psswrdNotValid() {
 			 	var removeSuccessClass = requirement.classList.remove('success');
-				requirement.className === 'li Success' ? removeSuccessClass : {} ;
+				requirement.className === 'li success' ? removeSuccessClass : {} ;
 			}			
 	}
 /* ----------------------------------\
 	Open/Close password input
 \-----------------------------------*/
 
-	passwordInput.addEventListener( 'focus', function() {
-		formBottom.classList.add('animate-bottom');
+	passwordInput.addEventListener( 'focus', function() 
+{		formBottom.classList.add('animate-bottom');
 	});
 
 	passwordInput.addEventListener( 'blur', function() {
-		console.log( psswrdValue );
+
 		var isDrawerOpen = formBottom.className === 'form animate-bottom';
 		
 		function closeDrawer() { formBottom.classList.remove('animate-bottom') }
 		
 		function errors() {
 			for( i = 0; i < msg.length; i++ ) {
-				( msg[i].tagName === "LI" ) ? msg[i].classList.add('error') : {};
+				if ( msg[i].tagName === "LI" ) {
+					if ( msg[i].className !== 'msg success' ) {
+						msg[i].classList.add('error');
+					}
+				}
 			}
 		}
 		isPasswordValid ? closeDrawer() : errors() ;
 	});
-
 /* ----------------------------------\
 		Open/Close confirm input
 \-----------------------------------*/
@@ -109,10 +112,7 @@ var confirmValue = {};
 
 		// Dont show confirm test unless there is a password
 		if ( psswrdLength > 0 ) {
-		console.log( confirmValue );			
-			if ( !confirmValue ) {
 				confirmPassword.classList.remove('hidden');
-			}
 		}
 	});
 
@@ -172,4 +172,14 @@ var confirmValue = {};
 
 		}
 	});
+	var terms = document.getElementById('terms-checkbox');
+
+	terms.addEventListener('click', function(){
+    	var button = document.getElementById('submit-button');
+
+    if(terms.checked)
+      button.disabled = false;
+    else
+     button.disabled = true;    
+  	});  
 })();
