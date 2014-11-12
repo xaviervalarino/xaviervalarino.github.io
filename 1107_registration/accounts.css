@@ -84,11 +84,11 @@ input[type="checkbox"] + label span {
 	cursor: pointer;
 }
 input[type="checkbox"]:checked + label span {
-	background: url("sprite.min.svg") no-repeat bottom left;
-	border: 1px solid #00a6dd;
+	background: url("sprite.min.svg") no-repeat bottom center;
+	background-size: auto 3rem;
+	border-color: #00a6dd;
 }
 #terms {
-	display: block;
 	height: 1.6rem;
 	font-size: .85rem;
 	-webkit-user-select: none;
@@ -269,6 +269,14 @@ span {
 }
 /* Shake animaton */
 @-webkit-keyframes shake {
+  0% {-webkit-transform: translateX(0);}
+  12.5% {-webkit-transform: translateX(-.6rem) }
+  37.5% {-webkit-transform: translateX(.5rem) }
+  62.5% {-webkit-transform: translateX(-.3rem) }
+  87.5% {-webkit-transform: translateX(.2rem) }
+  100% {-webkit-transform: translateX(0)}
+}
+@keyframes shake {
   0% {transform: translateX(0);}
   12.5% {transform: translateX(-.6rem) }
   37.5% {transform: translateX(.5rem) }
@@ -276,7 +284,6 @@ span {
   87.5% {transform: translateX(.2rem) }
   100% {transform: translateX(0)}
 }
-
 .required {
 	color: #e44f09;
 	font-weight: 700;
@@ -297,7 +304,7 @@ span {
 	padding: .7rem 2.5rem;
 	border: 0;
 	border-radius: 3px;
-	margin-top: 2rem;
+	margin-top: .5rem;
 	background-color: #00a6dd;
 }
 .blue-button:active, .blue-button:hover {
@@ -344,11 +351,23 @@ RESPONSIVE STYLES
 	.blue-button {
 		width: 100%;
 	}
+	input {
+		min-height: 44px;
+	}
+	#terms {
+		font-size: .7rem;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 	/* Portrait */
 	@media screen and (orientation:landscape) {
 		ul {
 			display: block;
 			border: 0;
+		}
+		#terms {
+			font-size: .8rem;
 		}
 		li.msg {
 			width: auto;
@@ -358,15 +377,14 @@ RESPONSIVE STYLES
 			-webkit-transition: transform .5s ease-in;
 			-webkit-transition: transform .5s ease-in;
 
-			-webkit-transform: translateY(2rem);
-			transform: translateY(2rem);
-
+			-webkit-transform: translateY(2.5rem);
+			transform: translateY(2.5rem);
 		}
 		/*Landscape for iPhone 4 and below*/
 		@media screen and (max-device-width: 30rem) {
 		   .msg, li.msg {
-	   		font-size: 0.75rem;
-	   		margin-right: .8rem;
+	   		font-size: 0.7rem;
+	   		margin-right: .4rem;
 			}
 		}	
 	}

@@ -11,7 +11,6 @@
 	var symbol = document.getElementById('symbol');
 	var length = document.getElementById('length');
 	var formBottom =	document.getElementById('bottom');
-	var msg = document.getElementsByClassName('msg');
 	var confirmPassword = document.getElementById('confirm');
 	var confirmMismatch	= document.getElementById('no-match');
 // Password requirements
@@ -78,13 +77,33 @@
 /* ----------------------------------\
 	Open/Close password input
 \-----------------------------------*/
+var textInputs = document.getElementsByClassName('text-input');
+var msg = document.getElementsByClassName('msg');
+	
+	
+	for ( var i=0 ; i < textInputs.length ; i++ ) {
+		textInputs[i].addEventListener( 'focus', function() {
+			
 
-	passwordInput.addEventListener( 'focus', function() 
-{		formBottom.classList.add('animate-bottom');
+			for( i = 0 ; i < this.parentNode.childNodes.length ; i++ ) {
+				console.log( this.parentNode.children );
+				/*if (this.parentNode.childNodes.className === 'msg error' ) {
+					console.log( this.id );
+					this.parentNode.childNodes.classList.remove('error');
+				}*/
+			}
+		});
+	}	
+			
+	passwordInput.addEventListener( 'focus', function() {
+			
+			formBottom.classList.add('animate-bottom');
+
+
 	});
 
 	passwordInput.addEventListener( 'blur', function() {
-
+		
 		var isDrawerOpen = formBottom.className === 'form animate-bottom';
 		
 		function closeDrawer() { formBottom.classList.remove('animate-bottom') }
