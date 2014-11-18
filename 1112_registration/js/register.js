@@ -19,7 +19,7 @@
 	var containsDigits = /[0-9]/;
 	var containsSpecialChar = /[!@#$%^&*)(+=._-]+/;
 // Password test variables
-	//var psswrdValue = {};
+	var psswrdValue = {};
 	var passwordLength;
 	var includesUppercase;
 	var inludesLowercase;
