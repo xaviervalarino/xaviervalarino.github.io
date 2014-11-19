@@ -167,6 +167,7 @@ var confirmValue = {};
 /* ----------------------------------\
 			email  Input
 \-----------------------------------*/
+
 	emailInput.addEventListener( 'blur', function() {
 		var emailInputValue = emailInput.value;
 		var emailInputLength = emailInputValue.length;
@@ -200,5 +201,6 @@ var confirmValue = {};
       button.disabled = false;
     else
      button.disabled = true;    
-  	});  
+  	});
+  	 
 })();

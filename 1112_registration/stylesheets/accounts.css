@@ -144,7 +144,7 @@ input[type="checkbox"]:checked + label span {
 
 /* Grey color behind form */
 /* line 122, ../sass/accounts.scss */
-.centering::after {
+.product-info::after {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -214,9 +214,10 @@ p {
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.5rem;
+  margin: 1rem 0;
 }
 
-/* line 178, ../sass/accounts.scss */
+/* line 179, ../sass/accounts.scss */
 .product-image {
   position: relative;
   width: 32rem;
@@ -225,7 +226,7 @@ p {
   overflow: hidden;
 }
 
-/* line 185, ../sass/accounts.scss */
+/* line 186, ../sass/accounts.scss */
 .product-image > img {
   position: absolute;
   bottom: 0;
@@ -233,7 +234,7 @@ p {
   height: auto;
 }
 
-/* line 191, ../sass/accounts.scss */
+/* line 192, ../sass/accounts.scss */
 .form-content {
   position: relative;
   display: block;
@@ -242,7 +243,7 @@ p {
   margin: -2.1rem 0 3rem 3rem;
 }
 
-/* line 199, ../sass/accounts.scss */
+/* line 200, ../sass/accounts.scss */
 .form-select-container {
   position: relative;
   overflow: hidden;
@@ -251,7 +252,7 @@ p {
   border: 1px solid #dedede;
   border-bottom: 0;
 }
-/* line 207, ../sass/accounts.scss */
+/* line 208, ../sass/accounts.scss */
 .form-select-container a {
   width: 50%;
   display: inline-block;
@@ -262,27 +263,27 @@ p {
   padding-bottom: 1rem;
   border-bottom: 1px solid #fff;
 }
-/* line 217, ../sass/accounts.scss */
+/* line 218, ../sass/accounts.scss */
 .form-select-container a:first-child {
   border-right: 1px solid #dedede;
 }
-/* line 220, ../sass/accounts.scss */
+/* line 221, ../sass/accounts.scss */
 .form-select-container a.active {
   color: #999;
   background: #f1f1f1;
   border-bottom: 1px solid #dedede;
 }
-/* line 225, ../sass/accounts.scss */
+/* line 226, ../sass/accounts.scss */
 .form-select-container a.active:hover {
   color: #00a6dd;
   background-color: #f2fafd;
 }
-/* line 229, ../sass/accounts.scss */
+/* line 230, ../sass/accounts.scss */
 .form-select-container a.active:active {
   background-color: #cceffa;
 }
 
-/* line 237, ../sass/accounts.scss */
+/* line 238, ../sass/accounts.scss */
 .form {
   position: relative;
   background-color: #fff;
@@ -291,14 +292,14 @@ p {
   border-top: 0;
 }
 
-/* line 244, ../sass/accounts.scss */
+/* line 245, ../sass/accounts.scss */
 #top {
   padding-top: 2.5em;
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 250, ../sass/accounts.scss */
+/* line 251, ../sass/accounts.scss */
 #bottom {
   border-top: 0;
   padding-top: 1.5rem;
@@ -307,32 +308,32 @@ p {
   transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-/* line 258, ../sass/accounts.scss */
+/* line 259, ../sass/accounts.scss */
 .inputbox {
   padding-bottom: 1.5rem;
 }
 
-/* line 261, ../sass/accounts.scss */
+/* line 262, ../sass/accounts.scss */
 #psswrdbox {
   padding-bottom: 0;
   /*Since '.password-tester' has padding*/
 }
 
-/* line 264, ../sass/accounts.scss */
+/* line 265, ../sass/accounts.scss */
 .input-title {
   color: #999;
   text-transform: uppercase;
   padding-bottom: 0.2rem;
 }
 
-/* line 269, ../sass/accounts.scss */
+/* line 270, ../sass/accounts.scss */
 .animate-bottom {
   -webkit-transform: translateY(6rem);
   transform: translateY(6rem);
 }
 
 /* Password tester */
-/* line 274, ../sass/accounts.scss */
+/* line 275, ../sass/accounts.scss */
 ul {
   position: absolute;
   left: -1px;
@@ -353,13 +354,13 @@ ul {
   user-select: none;
 }
 
-/* line 294, ../sass/accounts.scss */
+/* line 295, ../sass/accounts.scss */
 li {
   width: 50%;
   float: left;
 }
 
-/* line 298, ../sass/accounts.scss */
+/* line 299, ../sass/accounts.scss */
 .overlay {
   position: absolute;
   width: 100%;
@@ -367,23 +368,23 @@ li {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 304, ../sass/accounts.scss */
+/* line 305, ../sass/accounts.scss */
 .legalese {
   width: 50%;
 }
 
-/* line 308, ../sass/accounts.scss */
+/* line 309, ../sass/accounts.scss */
 #submit-button:disabled {
   color: #999;
   background-color: #f1f1f1;
 }
 
-/* line 313, ../sass/accounts.scss */
+/* line 314, ../sass/accounts.scss */
 span {
   padding: .5rem 0;
 }
 
-/* line 316, ../sass/accounts.scss */
+/* line 317, ../sass/accounts.scss */
 .msg {
   display: inline-block;
   font-size: .95rem;
@@ -391,7 +392,7 @@ span {
   color: #999;
   white-space: nowrap;
 }
-/* line 323, ../sass/accounts.scss */
+/* line 324, ../sass/accounts.scss */
 .msg::before, .msg:before {
   display: inline-block;
   width: 1.25rem;
@@ -404,13 +405,13 @@ span {
   background: #ddd;
 }
 
-/* line 337, ../sass/accounts.scss */
+/* line 338, ../sass/accounts.scss */
 .error {
   color: #e44f09;
   -webkit-animation: shake 300ms ease-in-out;
   -animation: shake 300ms ease-in-out;
 }
-/* line 343, ../sass/accounts.scss */
+/* line 344, ../sass/accounts.scss */
 .error::before, .error:before {
   background: #fc651b url("../img/sprite.min.svg") no-repeat 0 -7.5rem;
   background-size: 10rem;
@@ -420,11 +421,11 @@ span {
   -animation: contract 300ms;
 }
 
-/* line 356, ../sass/accounts.scss */
+/* line 357, ../sass/accounts.scss */
 .success {
   color: #333;
 }
-/* line 359, ../sass/accounts.scss */
+/* line 360, ../sass/accounts.scss */
 .success::before, .success:before {
   background: #8fc822 url("../img/sprite.min.svg") no-repeat -1.25rem -7.5rem;
   -webkit-transition: background-color 300ms ease-out;
@@ -510,13 +511,13 @@ span {
     transform: translateX(0);
   }
 }
-/* line 411, ../sass/accounts.scss */
+/* line 412, ../sass/accounts.scss */
 .required {
   color: #e44f09;
   font-weight: 700;
 }
 
-/* line 417, ../sass/accounts.scss */
+/* line 418, ../sass/accounts.scss */
 .blue-button {
   display: inline-block;
   color: #fff;
@@ -528,18 +529,18 @@ span {
   border-radius: 3px;
   background-color: #00a6dd;
 }
-/* line 428, ../sass/accounts.scss */
+/* line 429, ../sass/accounts.scss */
 .blue-button:active, .blue-button:hover {
   background-color: #0073a8;
 }
 
-/* line 433, ../sass/accounts.scss */
+/* line 434, ../sass/accounts.scss */
 .hidden {
   height: 0;
   display: none;
 }
 
-/* line 437, ../sass/accounts.scss */
+/* line 438, ../sass/accounts.scss */
 .clear {
   clear: both;
 }
@@ -547,98 +548,102 @@ span {
 /* BREAKPOINTS */
 /* ===== == = === 81.25em (1300px) === = == ===== */
 @media only screen and (max-width: 81.25em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.71674rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.71674rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 2.06009rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 1.03004rem;
     line-height: 1.88841rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.91845rem 0 0.85837rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.85837rem;
     line-height: 1.28755rem;
+    margin: 0.85837rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 27.46781rem;
     height: 3.43348rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 27.46781rem;
   }
 
-  /* line 481, ../sass/accounts.scss */
+  /* line 484, ../sass/accounts.scss */
   .form-content {
     margin-left: 2rem;
   }
 }
 /* ===== == = === 68.75em (1100px) === = == ===== */
 @media only screen and (max-width: 68.75em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.63934rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.63934rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 1.96721rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 0.98361rem;
     line-height: 1.80328rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.78689rem 0 0.81967rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.81967rem;
     line-height: 1.22951rem;
+    margin: 0.81967rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 26.22951rem;
     height: 3.27869rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 26.22951rem;
   }
 
-  /* line 492, ../sass/accounts.scss */
+  /* line 495, ../sass/accounts.scss */
   .form-content {
     width: 26rem;
     margin-left: 1rem;
@@ -646,49 +651,51 @@ span {
 }
 /* ===== == = === 56.25em (900px) === = == ===== */
 @media only screen and (max-width: 56.25em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.48148rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.48148rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 1.77778rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 0.88889rem;
     line-height: 1.62963rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.51852rem 0 0.74074rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.74074rem;
     line-height: 1.11111rem;
+    margin: 0.74074rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 23.7037rem;
     height: 2.96296rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 23.7037rem;
   }
 
-  /* line 505, ../sass/accounts.scss */
+  /* line 508, ../sass/accounts.scss */
   .form-content {
     width: 42%;
     float: right;
@@ -696,77 +703,93 @@ span {
     margin-right: 0.75rem;
   }
 
-  /* line 511, ../sass/accounts.scss */
-  .centering::after {
+  /* line 514, ../sass/accounts.scss */
+  .product-info::after {
     left: 55%;
   }
 }
 /* ===== == = === Max-width 768px === = == ===== */
 @media screen and (max-width: 48rem) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.81818rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.81818rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 2.18182rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 1.09091rem;
     line-height: 2rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 3.09091rem 0 0.90909rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.90909rem;
     line-height: 1.36364rem;
+    margin: 0.90909rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 32rem;
     height: 4rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 32rem;
   }
 
-  /* line 521, ../sass/accounts.scss */
+  /* line 524, ../sass/accounts.scss */
+  .info-to-bottom {
+    bottom: -11rem;
+    left: 0;
+    background: #fafafa;
+    padding: 1.5rem;
+    position: absolute;
+    border-top: 1px solid #dedede;
+  }
+  /* line 532, ../sass/accounts.scss */
+  .info-to-bottom h3 {
+    margin-top: 0;
+  }
+
+  /* line 537, ../sass/accounts.scss */
   body {
     background-color: #fff;
   }
 
-  /* line 524, ../sass/accounts.scss */
-  .centering::after {
+  /* line 540, ../sass/accounts.scss */
+  .product-info::after {
     display: none;
   }
 
-  /* line 527, ../sass/accounts.scss */
+  /* line 543, ../sass/accounts.scss */
   .page-container {
     display: block;
   }
 
-  /* line 530, ../sass/accounts.scss */
+  /* line 546, ../sass/accounts.scss */
   .product-info {
     display: block;
     float: none;
   }
 
-  /* line 534, ../sass/accounts.scss */
+  /* line 550, ../sass/accounts.scss */
   .form-content,
   .product-info {
     width: auto;
@@ -775,12 +798,12 @@ span {
     margin: 0;
   }
 
-  /* line 542, ../sass/accounts.scss */
+  /* line 558, ../sass/accounts.scss */
   #product-image {
     width: 100%;
   }
 
-  /* line 545, ../sass/accounts.scss */
+  /* line 561, ../sass/accounts.scss */
   form::before {
     box-sizing: initial;
     position: relative;
@@ -794,7 +817,7 @@ span {
     border-top: 1px solid #dedede;
   }
 
-  /* line 557, ../sass/accounts.scss */
+  /* line 573, ../sass/accounts.scss */
   .form {
     margin: 0;
     padding: 0;
@@ -802,7 +825,7 @@ span {
     /* border line across the top */
   }
 
-  /* line 564, ../sass/accounts.scss */
+  /* line 580, ../sass/accounts.scss */
   ul {
     left: 0;
     right: 0;
@@ -812,22 +835,22 @@ span {
     border-left: 0;
   }
 
-  /* line 572, ../sass/accounts.scss */
+  /* line 588, ../sass/accounts.scss */
   .msg {
     font-size: .8rem;
   }
 
-  /* line 575, ../sass/accounts.scss */
+  /* line 591, ../sass/accounts.scss */
   .blue-button {
     width: 100%;
   }
 
-  /* line 578, ../sass/accounts.scss */
+  /* line 594, ../sass/accounts.scss */
   input {
     min-height: 44px;
   }
 
-  /* line 581, ../sass/accounts.scss */
+  /* line 597, ../sass/accounts.scss */
   #terms {
     font-size: .7rem;
     padding-top: 20px;
@@ -837,24 +860,24 @@ span {
   /* Portrait */
 }
 @media screen and (max-width: 48rem) and (orientation: landscape) {
-  /* line 590, ../sass/accounts.scss */
+  /* line 606, ../sass/accounts.scss */
   ul {
     display: block;
     border: 0;
   }
 
-  /* line 594, ../sass/accounts.scss */
+  /* line 610, ../sass/accounts.scss */
   #terms {
     font-size: .8rem;
   }
 
-  /* line 597, ../sass/accounts.scss */
+  /* line 613, ../sass/accounts.scss */
   li.msg {
     width: auto;
     margin-right: 1rem;
   }
 
-  /* line 601, ../sass/accounts.scss */
+  /* line 617, ../sass/accounts.scss */
   .animate-bottom {
     -webkit-transition: transform .5s ease-in;
     -webkit-transition: transform .5s ease-in;
@@ -865,7 +888,7 @@ span {
   /*Landscape for iPhone 4 and below*/
 }
 @media screen and (max-width: 48rem) and (orientation: landscape) and (max-device-width: 30rem) {
-  /* line 612, ../sass/accounts.scss */
+  /* line 628, ../sass/accounts.scss */
   .msg, li.msg {
     font-size: 0.7rem;
     margin-right: .4rem;
@@ -873,170 +896,153 @@ span {
 }
 /* ===== == = === 37.5em (600px) === = == ===== */
 @media only screen and (max-width: 37.5em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.63934rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.63934rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 1.96721rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 0.98361rem;
     line-height: 1.80328rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.78689rem 0 0.81967rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.81967rem;
     line-height: 1.22951rem;
+    margin: 0.81967rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 28.57143rem;
     height: 3.57143rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 28.57143rem;
   }
 
-  /* line 628, ../sass/accounts.scss */
-  .product-info::before {
-    position: absolute;
-    top: 0;
-    bottom: 40rem;
-    width: 100%;
-    background: tomato;
-  }
-
-  /* line 637, ../sass/accounts.scss */
-  .info-to-bottom {
-    bottom: -11rem;
-    left: 0;
-    background: #fafafa;
-    padding: 1.5rem;
-    position: absolute;
-    border-top: 1px solid #dedede;
-  }
   /* line 645, ../sass/accounts.scss */
-  .info-to-bottom h3 {
-    margin-top: 0;
-  }
-
-  /* line 649, ../sass/accounts.scss */
   #bottom {
     padding-bottom: 0;
   }
 }
 /* ===== == = === 30em (480px) === = == ===== */
 @media only screen and (max-width: 30em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.52672rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.52672rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 1.83206rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 0.91603rem;
     line-height: 1.67939rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.59542rem 0 0.76336rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.76336rem;
     line-height: 1.14504rem;
+    margin: 0.76336rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 20.38217rem;
     height: 2.54777rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 20.38217rem;
   }
 
-  /* line 661, ../sass/accounts.scss */
+  /* line 657, ../sass/accounts.scss */
   .product-image {
     margin: 1rem auto;
   }
 
-  /* line 664, ../sass/accounts.scss */
+  /* line 660, ../sass/accounts.scss */
   .form-content {
     font-size: 0.9rem;
   }
 }
 /* ===== == = === 20em (320px) === = == ===== */
 @media only screen and (max-width: 20em) {
-  /* line 444, ../sass/accounts.scss */
+  /* line 445, ../sass/accounts.scss */
   .product-info {
     padding-left: 1.33333rem;
   }
 
-  /* line 447, ../sass/accounts.scss */
+  /* line 448, ../sass/accounts.scss */
   .logo {
     margin-left: 1.33333rem;
   }
 
-  /* line 450, ../sass/accounts.scss */
+  /* line 451, ../sass/accounts.scss */
   h1 {
     font-size: 1.6rem;
   }
 
-  /* line 453, ../sass/accounts.scss */
+  /* line 454, ../sass/accounts.scss */
   h2 {
     font-size: 0.8rem;
     line-height: 1.46667rem;
   }
 
-  /* line 457, ../sass/accounts.scss */
+  /* line 458, ../sass/accounts.scss */
   h3 {
     font-size: 1rem;
+    margin: 2.26667rem 0 0.66667rem;
   }
 
-  /* line 460, ../sass/accounts.scss */
+  /* line 462, ../sass/accounts.scss */
   p {
     font-size: 0.66667rem;
     line-height: 1rem;
+    margin: 0.66667rem 0;
   }
 
-  /* line 466, ../sass/accounts.scss */
+  /* line 469, ../sass/accounts.scss */
   .product-image {
     width: 16.84211rem;
     height: 2.10526rem;
   }
-  /* line 470, ../sass/accounts.scss */
+  /* line 473, ../sass/accounts.scss */
   .product-image img {
     width: 16.84211rem;
   }

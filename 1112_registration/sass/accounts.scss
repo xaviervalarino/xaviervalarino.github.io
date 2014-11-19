@@ -5,6 +5,7 @@ $border: 1px solid #dedede;
 $opswat: #00a6dd;
 $light-blue: #f2fafd;
 $hover-blue: #cceffa;
+$spritesheet: url("../img/sprite.min.svg");
 
 html {
 	font-family: Open sans, Arial, sans-serif;
@@ -17,7 +18,7 @@ html {
 	box-sizing: border-box;
 }
 body {
-	background-color: #fbfbfc;
+	background-color: #fff;
 	margin: 0;
 	-webkit-text-size-adjust: 100%;
 }
@@ -25,31 +26,20 @@ a {
 	background-color: transparent;
 	color: #00a6dd;
 	text-decoration: none;
+	
+	&.link:active,
+	&.link:hover, {
+  		outline: 0;
+		color: #008ec6;
+	}
 }
-a.link:active,
-a.link:hover,
- {
-  outline: 0;
-  border-bottom: 1px dotted #00a6dd;
+.input-link {
+	font-size: .9rem;
+	float: right;
 }
 a.logo:hover {
 	text-decoration: none;
 	border: 0 none;
-}
-h1 {
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 0;
-}
-h2 {
-	font-weight: 400;
-	color: #333;
-	margin: 1rem 0 0 0;
-}
-h3 {
-	font-weight: 400;
-	color: #333;
-
 }
 img {
   border: 0;
@@ -83,27 +73,29 @@ input[type="checkbox"] { /* Remove default checkbox from form */
 	position: absolute;
 	height: 0;
 	opacity: 0;
-}
-input[type="checkbox"] + label span { /* Styled checkbox */
-	display: inline-block;
-	width: 1.6rem;
-	height: 1.6rem;
-	margin: 0 1rem 0 0;
-	padding: 0;
-	vertical-align: middle;
-	border: 1px solid #e5e5e5;
-	border-radius: 2px;
-	cursor: pointer;
-}
-input[type="checkbox"]:focus + label span {
-	border: 1px solid #00a6dd;
 
+	 + label span { /* Styled checkbox */
+		display: inline-block;
+		width: 1.6rem;
+		height: 1.6rem;
+		margin: 0 1rem 0 0;
+		padding: 0;
+		vertical-align: middle;
+		border: 1px solid #e5e5e5;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+	&:focus + label span {
+		border: 1px solid #00a6dd;
+	}
+	&:checked + label span {
+		background: $spritesheet right -9rem no-repeat ;
+		background-size: 12rem;
+		border-color: #00a6dd;
+	}
 }
-input[type="checkbox"]:checked + label span {
-	background: url("../img/sprite.min.svg") right -9rem no-repeat;
-	background-size: 12rem;
-	border-color: #00a6dd;
-}
+
+
 #terms {
 	height: 1.6rem;
 	font-size: .85rem;
@@ -120,54 +112,91 @@ input[type="checkbox"]:checked + label span {
 	padding: 1rem;
 	border: 1px solid #ff803c;
 	background-color: #fff7f3;
-}
-.header {
-	padding: 1.2rem;
-}
-.logo {
-	display: block;
-	width: 6rem;
-	height: 3.75rem;
-	overflow: hidden;
-}
-.logo > img {
-	width: 6rem;
-	height: auto;
+	z-index: 100;
 }
 .centering {
+	position: relative;
 	text-align: center;
 }
+/* Grey color behind form */
+.product-info::after {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		content: " ";
+		left: 50%;
+		width: 50%;
+		background-color: #fafafa;
+		z-index: -10;
+	}
 .page-container {
 	display: inline-block;
 	text-align: left;
 }
 	.product-info {
 		float: left;
-		margin: 0 2rem;
+		padding-right: 2rem;
+		width: 50%;
+		max-width: 44rem;
 	}
-		h1 {
-			font-size: 2.8rem;
-			color: #999;
+	.logo {
+	display: block;
+	width: 5rem;
+	height: 3.1rem;
+	overflow: hidden;
+	margin: 2rem 0 1rem;
+	}
+		.logo > img {
+			width: 5rem;
+			height: auto;
 		}
-		#product-image {
+
+	h1 {
+	  font-size: 2.4rem;
+	  font-weight: 300;
+	  color: #333;
+	  margin: 0;
+	}
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 200;
+		color: #191919;
+		line-height: 2.2rem;
+		margin: 0;
+	}
+	h3 {
+		font-size: 1.3rem;
+		font-weight: 400;
+		color: #333;
+		margin: 3.4rem 0 1rem;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 200;
+		line-height: 1.5rem;
+		margin: 1rem 0;
+	}
+		.product-image {
 			position: relative;
 			width: 32rem;
 			height: 4rem;
-			margin: 3rem 1rem;
+			margin: 2rem auto;
 			overflow: hidden;
 		}
-		#product-image > img {
+		.product-image > img {
 			position: absolute;
 			bottom: 0;
 			width: 32rem;
 			height: auto;
 		}
-	.content {
+	.form-content {
+		position: relative;
 		display: block;
 		width: 28rem;
 		float: left;
-		margin: 0 2rem;
+		margin: -2.1rem 0 3rem 3rem ;
 	}
+
 		.form-select-container {
 			position: relative;
 			overflow: hidden;
@@ -175,9 +204,8 @@ input[type="checkbox"]:checked + label span {
 			text-transform: uppercase;
 			border: $border;
 			border-bottom: 0;
-		}
 
-			a.form-select {
+			a {
 				width: 50%;
 				display: inline-block;
 				float: left;
@@ -186,22 +214,25 @@ input[type="checkbox"]:checked + label span {
 				padding-top: 1rem;
 				padding-bottom: 1rem;
 				border-bottom: 1px solid #fff;
-			}
-			a.form-select:first-child {
-				border-right: $border;
-			}
-				a.form-select.active {
+			
+				&:first-child {
+					border-right: $border;
+				}		
+				&.active {
 					color: #999;
 					background: #f1f1f1;
 					border-bottom: $border;
-				}
-				a.form-select.active:hover {
-					color: #00a6dd;
-					background-color: $light-blue;
-				}
-					a.form-select.active:active {
+
+					&:hover {
+						color: #00a6dd;
+						background-color: $light-blue;
+					}	
+					&:active {
 						background-color: $hover-blue;
-					}
+					}				
+				}
+			}				
+		}
 
 
 			.form {	
@@ -226,17 +257,15 @@ input[type="checkbox"]:checked + label span {
 				transition: transform 800ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 			}
 		.inputbox {
-				padding-bottom: 1.5rem;
-			}
+			padding-bottom: 1.5rem;
+		}
 			#psswrdbox {
 					padding-bottom: 0; /*Since '.password-tester' has padding*/
 				}
 			.input-title {
 				color: #999;
-				display: inherit;
-				clear: left;
 				text-transform: uppercase;
-				margin-bottom: 0.2rem;
+				padding-bottom: 0.2rem;
 			}		
 				.animate-bottom {
 					-webkit-transform: translateY(6rem);
@@ -291,8 +320,8 @@ span {
 	margin: 0;
 	color: #999;
 	white-space: nowrap;
-}
-	.msg::before, .msg:before {
+
+		&::before, &:before {
 		display: inline-block;
 		width: 1.25rem;
 		height: 1.25rem;
@@ -303,15 +332,17 @@ span {
 		margin-top: -.2rem;
 		background: #ddd;
 	}
+
+}
+
 .error {
 	color: #e44f09;
 
 	-webkit-animation: shake 300ms ease-in-out;
 	-animation: shake 300ms ease-in-out;
-
-}
-	.error::before {
-		background: #fc651b url("../img/sprite.min.svg") 0 -7.5rem;
+	
+		&::before, &:before {
+		background: #fc651b $spritesheet no-repeat 0 -7.5rem;
 		background-size: 10rem;
 
 		-webkit-transition: background-color 300ms ease-out;
@@ -320,12 +351,14 @@ span {
 		-webkit-animation: contract 300ms;
 		-animation: contract 300ms;
 	}
+}
+
 
 .success {
 	color: #333;
-}
-	.success::before, .success:before {
-		background: #8fc822 url("../img/sprite.min.svg") -1.25rem -7.5rem;
+
+		&::before, &:before {
+		background: #8fc822 $spritesheet  no-repeat -1.25rem -7.5rem;
 
 		-webkit-transition: background-color 300ms ease-out;
 		transition: background-color  300ms ease-out;
@@ -336,6 +369,8 @@ span {
 		-webkit-animation: bulge 300ms;
 		animation: bulge 300ms;
 	}
+}
+
 
 /* Bulge animation */
 @-webkit-keyframes bulge {
@@ -389,12 +424,13 @@ span {
 	padding: .7rem 2.5rem;
 	border: 0;
 	border-radius: 3px;
-	margin-top: .5rem;
 	background-color: #00a6dd;
-}
-.blue-button:active, .blue-button:hover {
+
+	&:active, &:hover {
 	background-color: #0073a8;
+	}
 }
+
 .hidden {
 	height: 0;
 	display: none;
@@ -402,15 +438,107 @@ span {
 .clear {
 	clear: both;
 }
-/*--------------\
-RESPONSIVE STYLES
-\--------------*/
 
-/* Max-width 768px */
-@media screen and (max-width: 48rem) {
+/* BREAKPOINTS */
+
+	@mixin product-info-scaling($scale)	{
+		.product-info {
+			padding-left: ( 2rem / $scale );
+		}
+		.logo {
+			margin-left:  ( 2rem / $scale );
+		}
+		h1 {
+			font-size: ( 2.4rem / $scale);
+		}
+		h2 {
+			font-size: ( 1.2rem / $scale);
+			line-height: ( 2.2rem / $scale );
+		}
+		h3 {
+			font-size: 1rem;
+			margin: ( 3.4rem / $scale ) 0  ( 1rem /  $scale )
+		}
+		p {
+			font-size: ( 1rem / $scale );
+			line-height: ( 1.5rem / $scale );
+			margin: (1rem / $scale ) 0;
+		}
+	}
+	@mixin product-img-scaling( $scale)	{
+		.product-image {
+			width:  ( 32rem / $scale ) ;
+			height: ( 4rem / $scale );	
+			
+			img {
+				width: ( 32rem / $scale );
+			}
+		}
+	}		
+/* ===== == = === 81.25em (1300px) === = == ===== */
+
+@media only screen and (max-width : 81.25em) {
+	
+	@include product-info-scaling(1.165);		
+	@include product-img-scaling(1.165);
+	.form-content {
+		margin-left: 2rem;
+	}
+}
+/* ===== == = === 68.75em (1100px) === = == ===== */
+
+@media only screen and (max-width : 68.75em) {
+
+	@include product-info-scaling(1.22);	
+	@include product-img-scaling(1.22);	
+
+	.form-content {
+		width: 26rem;
+		margin-left: 1rem;
+	}
+}
+
+/* ===== == = === 56.25em (900px) === = == ===== */
+
+@media only screen and (max-width : 56.25em) {
+ 	
+ 	@include product-info-scaling(1.35);	
+	@include product-img-scaling(1.35);	
+
+	.form-content {
+		width: 42%;
+		float: right;
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+		.product-info::after {
+		left: 55%;	
+	}
+}
+/* ===== == = === Max-width 768px === = == ===== */
+@media screen and ( max-width: 48rem ) {
+
+	@include product-info-scaling(1.1);	
+	@include product-img-scaling(1);	
+	
+	.info-to-bottom {
+	    bottom: -11rem;
+	    left: 0;
+	    background: #fafafa;
+	    padding: 1.5rem;
+	    position: absolute;
+	    border-top: $border;
+	
+		h3 {
+			margin-top: 0;
+		}
+	}
 
 	body {
 		background-color: #fff;
+	}
+	.product-info::after {
+		display: none;	
 	}
 	.page-container {
 		display: block;
@@ -419,33 +547,35 @@ RESPONSIVE STYLES
 		display: block;
 		float: none;
 	}
-	.content,
+	.form-content,
 	.product-info
 	{
 		width: auto;
+		float: none;
 		padding: 0 1.5rem 1.5rem;
 		margin: 0;
-		float: none;
 	}
 	#product-image {
 		width: 100%;
 	}
-	form::before {
-		box-sizing: initial;
-		position: relative;
-		content: " ";
-		width: 100%;
-		margin: 0 -1.5rem;
-		padding: 0 1.5rem;
-		display: block;
-		top: -1px;
-		z-index: -100;
-		border-top: $border;
+	form::before { 
+			box-sizing: initial;
+			position: relative;
+			content: " ";
+			width: 100%;
+			margin: 0 -1.5rem;
+			padding: 0 1.5rem;
+			display: block;
+			top: -1px;
+			z-index: -100;
+			border-top: $border;
 	}
 	.form {
 		margin: 0;
 		padding: 0;
 		border: 0;
+		
+		/* border line across the top */
 	}
 	ul {
 		left: 0;
@@ -471,7 +601,7 @@ RESPONSIVE STYLES
 	}
 
 	/* Portrait */
-	@media screen and (orientation:landscape) {
+	@media screen and ( orientation:landscape ) {
 		
 		ul {
 			display: block;
@@ -493,13 +623,48 @@ RESPONSIVE STYLES
 		}
 
 		/*Landscape for iPhone 4 and below*/
-		@media screen and (max-device-width: 30rem) {
+		@media screen and ( max-device-width: 30rem ) {
 		   
 		   .msg, li.msg {
-	   		font-size: 0.7rem;
-	   		margin-right: .4rem;
+	   			font-size: 0.7rem;
+	   			margin-right: .4rem;
 			}
-		}	
+		}
+	}
+}	
+
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+
+@media only screen and (max-width: 37.5em) {
+
+	@include product-info-scaling(1.22);	
+	@include product-img-scaling(1.12);	
+	
+
+	#bottom {
+		padding-bottom: 0;
 	}
 }
 
+/* ===== == = === 30em (480px) === = == ===== */
+
+@media only screen and (max-width : 30em) {
+
+	@include product-info-scaling(1.31);	
+	@include product-img-scaling(1.57);	
+
+	.product-image {
+		margin: 1rem auto;
+	}
+	.form-content {
+		font-size: 0.9rem;
+	}
+}
+/* ===== == = === 20em (320px) === = == ===== */
+
+@media only screen and (max-width : 20em) {
+	
+	@include product-info-scaling(1.5);	
+	@include product-img-scaling(1.9);	
+}
