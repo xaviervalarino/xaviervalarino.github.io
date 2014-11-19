@@ -1,0 +1,24 @@
+~~~~~~~~~
+TO-DO LIST
+~~~~~~~~~
+- Mockups for remaining pages:
+	- forgot_password
+	- resend_activation
+	- activation_sent
+	- account_activated
+
+- create and add 'activation_sent' image to sprite.svg
+	-update CSS to accomodate new size
+
+
+
+- Add error messages for the remainder of the form on registration.html, and other pages
+
+- Blocker: Terms and Conditions
+	- GEARS has terms and conditions at: 
+		https://www.opswatgears.com/terms
+	Will regular Portal sign ups have a different T&C, or will we have to merge the two? (Since users 	are effectively signing up for the same services)
+
+- register.js
+	- Confirm password tester on keyup
+	- refactor into more modular functions for the addEventListeners?
