@@ -519,7 +519,7 @@ span {
 @media screen and ( max-width: 48rem ) {
 
 	@include product-info-scaling(1.1);	
-	@include product-img-scaling(1);	
+	@include product-img-scaling(1);
 	
 	.info-to-bottom {
 	    bottom: -11rem;
@@ -646,6 +646,14 @@ span {
 		padding-bottom: 0;
 	}
 }
+
+
+
+
+
+
+
+
 
 /* ===== == = === 30em (480px) === = == ===== */
 
