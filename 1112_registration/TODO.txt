@@ -17,7 +17,7 @@ TO-DO LIST
 - Blocker: Terms and Conditions
 	- GEARS has terms and conditions at: 
 		https://www.opswatgears.com/terms
-	Will regular Portal sign ups have a different T&C, or will we have to merge the two? (Since users 	are effectively signing up for the same services)
+	Will regular Portal sign ups have a different T&C, or will we have to merge the two? (Since users are effectively signing up for the same services)
 
 - register.js
 	- Confirm password tester on keyup

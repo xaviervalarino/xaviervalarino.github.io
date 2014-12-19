@@ -17,14 +17,14 @@ html {
 *, *:before, *:after {  
 	box-sizing: border-box;
 }
-body {
+body {$opswat
 	background-color: #fff;
 	margin: 0;
 	-webkit-text-size-adjust: 100%;
 }
 a {
 	background-color: transparent;
-	color: #00a6dd;
+	color: $opswat;
 	text-decoration: none;
 	
 	&.link:active,
@@ -86,12 +86,12 @@ input[type="checkbox"] { /* Remove default checkbox from form */
 		cursor: pointer;
 	}
 	&:focus + label span {
-		border: 1px solid #00a6dd;
+		border: 1px solid $opswat;
 	}
 	&:checked + label span {
 		background: $spritesheet right -9rem no-repeat ;
 		background-size: 12rem;
-		border-color: #00a6dd;
+		border-color: $opswat;
 	}
 }
 
@@ -224,7 +224,7 @@ input[type="checkbox"] { /* Remove default checkbox from form */
 					border-bottom: $border;
 
 					&:hover {
-						color: #00a6dd;
+						color: $opswat;
 						background-color: $light-blue;
 					}	
 					&:active {
@@ -424,7 +424,7 @@ span {
 	padding: .7rem 2.5rem;
 	border: 0;
 	border-radius: 3px;
-	background-color: #00a6dd;
+	background-color: $opswat;
 
 	&:active, &:hover {
 	background-color: #0073a8;

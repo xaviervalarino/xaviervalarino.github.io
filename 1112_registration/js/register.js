@@ -1,4 +1,5 @@
-(function(){
+document.addEventListener("DOMContentLoaded", function(event) { 
+
 // DOM nodes
 	var emailInput = document.getElementById('email');
 	var passwordInput = document.getElementById('register-password');
@@ -55,11 +56,10 @@
 								inludesLowercase &&
 								includesDigits &&
 								includesSpecialChar );
-
-	});
-	/* -------------------\
-		Password Tester
-	\--------------------*/
+	
+		/* -------------------\
+			Password Tester
+		\--------------------*/
 		function checkPasswordFormat( test, requirement ) {
 
 			test ? psswrdValid() : psswrdNotValid();
@@ -72,11 +72,15 @@
 			 function psswrdNotValid() {
 			 	var removeSuccessClass = requirement.classList.remove('success');
 				requirement.className === 'li success' ? removeSuccessClass : {} ;
-			}			
-	}
-/* ----------------------------------\
+			}	
+		}
+
+	});
+
+
+/* -----------------------------\
 	Open/Close password input
-\-----------------------------------*/
+\------------------------------*/
 var textInputs = document.getElementsByClassName('text-input');
 var msg = document.getElementsByClassName('msg');
 	
@@ -86,7 +90,6 @@ var msg = document.getElementsByClassName('msg');
 			
 
 			for( i = 0 ; i < this.parentNode.childNodes.length ; i++ ) {
-				console.log( this.parentNode.children );
 				/*if (this.parentNode.childNodes.className === 'msg error' ) {
 					console.log( this.id );
 					this.parentNode.childNodes.classList.remove('error');
@@ -99,10 +102,9 @@ var msg = document.getElementsByClassName('msg');
 			
 			formBottom.classList.add('animate-bottom');
 
-
 	});
 
-	passwordInput.addEventListener( 'blur', function() {
+	confirmInput.addEventListener( 'blur', function() {
 		
 		var isDrawerOpen = formBottom.className === 'form animate-bottom';
 		
@@ -119,10 +121,10 @@ var msg = document.getElementsByClassName('msg');
 		}
 		isPasswordValid ? closeDrawer() : errors() ;
 	});
+
 /* ----------------------------------\
 		Open/Close confirm input
 \-----------------------------------*/
-
 var confirmValue = {};
 
 	confirmInput.addEventListener( 'focus', function() {
@@ -201,4 +203,4 @@ var confirmValue = {};
     else
      button.disabled = true;    
   	});  
-})();
+});
