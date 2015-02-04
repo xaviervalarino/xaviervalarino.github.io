@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"prod",
+				"productInterest"
+			],
+			[
 				"password",
 				"passwordInput"
 			],
@@ -52,50 +60,49 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/TODO.txt",
+			"contents": "http://code.tutsplus.com/articles/building-static-sites-with-jekyll--net-22211\n\nhttp://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692\n\nhttp://css-tricks.com/video-screencasts/133-figuring-responsive-images/\n\n",
+			"file": "/C/Users/xvalarino/Dropbox/Notes/links",
+			"file_size": 244,
+			"file_write_time": 130655881949120753,
 			"settings":
 			{
-				"buffer_size": 701,
+				"buffer_size": 242,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/screen.scss",
+			"file": "/C/Users/xvalarino/Dropbox/OPSWAT Role.txt",
 			"settings":
 			{
-				"buffer_size": 295,
+				"buffer_size": 1717,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/xvalarino/Dropbox/code_snippets/track_product_interest.js",
+			"file": "/C/Users/xvalarino/Desktop/todo-list",
 			"settings":
 			{
-				"buffer_size": 1404,
+				"buffer_size": 657,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "/C/Users/xvalarino/Dropbox/Metadefender User Interview",
 			"settings":
 			{
-				"buffer_size": 209,
-				"line_ending": "Unix"
+				"buffer_size": 2441,
+				"line_ending": "Windows",
+				"name": "Metadefender User Interview"
 			}
 		},
 		{
-			"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/accounts.scss",
+			"contents": "- LinkedIn profile update\n- Review utilities to find out hiccup\n	- does jessie owe me oct. utilz, probably\n\n\n- see if you can config openbox to have larger area for resize window function\n\n- Email for Dan on data recovery:\n	- gparted\n	- Yubi installer\n	- clonezilla\n	- dd command in terminal\n\n- Holy Warbles mixtapes and list for Bill & Mike\n	https://melomanovariopinto.wordpress.com/2012/04/18/mi-pequeno-homenaje-a-lo-que-fue-un-gran-blog-holy-warbles/\n\n- Replace car mirror\n- Replace car stereo\n- Taxes\n- 10-99 to & from Taylor\n\nHOUSE:\n- donation clothing and things\n- Rick Griffin prints?\n- chair for desk\n\n\nTAX / MONEY:\n- Equifax mail\n- List of work tax deductible items\n	- Balsamiq\n	- SSD\n	- Netgear Router\n	- Sublime\n	- Manifesto\n\n...................................\n\n- At some point, talk to Ana\n Potentially call Quike...\n \n \nFor Dual Boot \n- Crucial M400 with TRIM and linux?\n\n\nFor Jeep Cherokee\n- Look over tune-up invoice\n- get code tester back to Rush\n\n- D3 Tutorial\n\n\n- New design for Resume\n- Collect content for Case Studies\n	- Write case studies\n		- Think of larger narrative\n\n- First build with Jeckll\n- Paper wireframe new site\n- Dan Bodah Sketch!!!\n	- Make Sketch\n	- Potentially vectorize\n	- Email DAN!!!\n- Enmotus Logo!!!\n	- Make New version \n	- Show \"Gamer Desktop\" Environment with Logo\n	- Email ADAM!!!\n\n- Open WRT\n	- documentation on creating an access point repeater\n\n- Sell Katrines Bike\n		- Get cleaner\n		- New handlebars?\n- Bike Parts. Make this into a spreadsheet\n	- For Huffy:\n		- Saddle											$25\n		- Headset?											$20\n		- chain												$10\n		- seat post											$40\n		- tires												$70\n		- Handle bars										$15\n		- New wheels							\n			- Lace up back wheel\n			- Order new front hub							$40\n			- Spokes for front wheel						$40\n	- For Gary Fischer\n		- Saddle											$50\n		- Shifters (from Mitchell?)				\n		- Brakes											$70	\n		- Brake levers										$50\n		- chain												$10\n		- Tires												$100\n		- New surly fork(?)									$90\n			- Need suspension correction measurements\n		-\n		\n		\nFor sharing thunderbird profile on dual boot:\n	http://ubuntuforums.org/showthread.php?t=203524\n\n	",
+			"file": "/C/Users/xvalarino/Dropbox/thingsThatMightGetDone.txt",
+			"file_size": 2289,
+			"file_write_time": 130659737490000000,
 			"settings":
 			{
-				"buffer_size": 11979,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "register.js",
-			"settings":
-			{
-				"buffer_size": 5910,
+				"buffer_size": 2157,
 				"line_ending": "Windows"
 			}
 		}
@@ -103,28 +110,100 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 262.0,
+		"height": 180.0,
 		"selected_items":
 		[
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"package",
-				"Package Control: List Packages"
-			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"list",
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				"filedif",
+				"FileDiffs: Menu"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"package contr",
+				"Package Control: Remove Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"diable",
+				"Package Control: Disable Package"
+			],
+			[
+				"list ",
 				"Package Control: List Packages"
 			],
 			[
-				"settings",
-				"Preferences: Settings - User"
+				"isntall ",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax: txt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ahk",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"dif",
+				"FileDiffs: Menu"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
 			],
 			[
 				"lint",
@@ -183,9 +262,10 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 173.0,
 		"history":
 		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')"
 		]
 	},
 	"distraction_free":
@@ -200,12 +280,48 @@
 	"expanded_folders":
 	[
 		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration",
-		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/js",
-		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/node_modules",
-		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass"
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/html",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/stylesheets"
 	],
 	"file_history":
 	[
+		"/C/Users/xvalarino/Desktop/user_quesitonnaire",
+		"/C/Users/xvalarino/Dropbox/omicia-text",
+		"/C/Users/xvalarino/Desktop/GRSS_Dashboard/default_config",
+		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/xvalarino/Downloads/Preferences.sublime-settings",
+		"/C/Users/xvalarino/Dropbox/Windows Package Control.sublime-settings",
+		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/xvalarino/Desktop/list.txt",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/stylesheets/accounts.css",
+		"/C/Program Files (x86)/OPSWAT/Metadefender/Client/FTC/LOP/App/libreoffice/program/bootstrap.ini",
+		"/C/Windows/Boot/PCAT/bootmgr",
+		"/C/Users/xvalarino/Desktop/meta-questions",
+		"/C/Users/xvalarino/Documents/AutoHotkey.ahk",
+		"/C/Users/xvalarino/Documents/autoHotKeyScripts/AutoHotkey.ahk",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/html/register.html",
+		"/C/Users/xvalarino/Documents/autoHotKeyScripts/volumeControl.ahk",
+		"/C/Users/xvalarino/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AutoHotkey.ahk.lnk",
+		"/C/Users/xvalarino/Dropbox/thingsToGet",
+		"/C/Users/xvalarino/Documents/autoHotKeyScripts/Accents.ahk",
+		"/C/Users/xvalarino/Dropbox/code_snippets/track_product_interest.js",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/html/activation_email_sent.html",
+		"/C/Users/xvalarino/Desktop/todo-list",
+		"/C/Users/xvalarino/Desktop/Venmo   Xavier Valarino.html",
+		"/C/Users/xvalarino/Dropbox/thingsThatMightGetDone.txt",
+		"/C/Users/xvalarino/Downloads/Rebuild_Icon_Cache",
+		"/C/Users/xvalarino/Desktop/url",
+		"/C/Users/xvalarino/Desktop/opswat.thmx",
+		"/C/Users/xvalarino/Desktop/MetascanFront2.svg",
+		"/C/Users/xvalarino/Desktop/MetascanFront.svg",
+		"/C/Users/xvalarino/Desktop/12-8_notes",
+		"/C/Users/xvalarino/Desktop/Distribution",
+		"/C/Users/xvalarino/Desktop/.bat",
+		"/C/Users/xvalarino/Desktop/Create App Icons.jsx",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/accounts.scss",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/screen.scss",
+		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/TODO.txt",
 		"/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/js/register.js",
 		"/C/Users/xvalarino/Dropbox/OPSWAT/registration-v2/george-form-validation.js",
 		"/C/Users/xvalarino/Dropbox/OPSWAT/registration-v2/Registration_files/login.js",
@@ -213,7 +329,6 @@
 		"/C/Users/xvalarino/Dropbox/Notes/links",
 		"/C/Users/xvalarino/Dropbox/Notes/links.txt",
 		"/C/Users/xvalarino/Dropbox/letters.txt",
-		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/xvalarino/Dropbox/Preferences.sublime-settings",
 		"/C/wamp/www/index.php",
 		"/C/Users/xvalarino/Desktop/d3_examples/data.tsv",
@@ -223,7 +338,6 @@
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/Default (Windows).sublime-keymap",
 		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
-		"/C/Users/xvalarino/Dropbox/code_snippets/track_product_interest.js",
 		"/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings"
 	],
 	"find":
@@ -242,6 +356,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"!",
+			"h5",
+			"p",
+			"h1",
+			"h*{",
+			"h* {",
+			"NRAGENT",
+			"background",
+			"\"(.+?)\",",
+			"[\\t]{4}",
+			"');\n",
 			"#00a6dd",
 			"    "
 		],
@@ -251,6 +376,9 @@
 		"regex": true,
 		"replace_history":
 		[
+			"^",
+			"$1",
+			"",
 			"$opswat",
 			"\\t"
 		],
@@ -263,24 +391,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/TODO.txt",
+					"file": "/C/Users/xvalarino/Dropbox/Notes/links",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 701,
+						"buffer_size": 242,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								685,
-								685
+								242,
+								242
 							]
 						],
 						"settings":
@@ -288,95 +416,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/screen.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -387,11 +431,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -402,39 +466,14 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_double_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -444,20 +483,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/C/Users/xvalarino/Dropbox/code_snippets/track_product_interest.js",
+					"buffer": 1,
+					"file": "/C/Users/xvalarino/Dropbox/OPSWAT Role.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1404,
+						"buffer_size": 1717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								750,
-								750
+								19,
+								23
 							]
 						],
 						"settings":
@@ -465,6 +504,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -475,11 +519,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -490,63 +554,37 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_double_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 22.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/Users/xvalarino/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"buffer": 2,
+					"file": "/C/Users/xvalarino/Desktop/todo-list",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 209,
+						"buffer_size": 657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								139,
-								139
+								457,
+								457
 							]
 						],
 						"settings":
@@ -554,6 +592,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -564,11 +607,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -579,39 +642,14 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_double_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -621,27 +659,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/xvalarino/Documents/GitHub/xaviervalarino.github.io/1112_registration/sass/accounts.scss",
+					"buffer": 3,
+					"file": "/C/Users/xvalarino/Dropbox/Metadefender User Interview",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11979,
+						"buffer_size": 2441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								435,
-								435
+								29,
+								29
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
+							"auto_name": "Metadefender User Interview",
 							"bh_regions":
 							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -652,11 +696,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -667,40 +731,14 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_double_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -710,20 +748,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "register.js",
+					"buffer": 4,
+					"file": "/C/Users/xvalarino/Dropbox/thingsThatMightGetDone.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5910,
+						"buffer_size": 2157,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								249,
-								249
+								881,
+								881
 							]
 						],
 						"settings":
@@ -731,6 +769,11 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -741,11 +784,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -756,43 +819,18 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_double_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/predawn (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 100.0,
+						"translation.y": 858.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -807,7 +845,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 55.0
 	},
 	"layout":
 	{
@@ -839,7 +877,7 @@
 	"project": "accounts.opswat.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 106.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -847,6 +885,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\xvalarino\\Desktop\\list.txt"
+			]
 		],
 		"width": 0.0
 	},
